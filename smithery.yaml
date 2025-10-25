@@ -1,0 +1,49 @@
+name: marinade-finance-mcp-server
+version: 1.0.0
+description: MCP server for Marinade Finance operations on Solana
+type: server
+
+environment:
+  - name: ENVIRONMENT
+    description: Solana network environment (MAINNET or TESTNET)
+    required: true
+    default: "MAINNET"
+  
+  - name: USE_STREAMABLE_HTTP
+    description: Enable streamable HTTP transport (true or false)
+    required: true
+    default: true
+  
+  - name: PORT
+    description: Server port number
+    required: true
+    default: 3000
+
+  - name: HOST
+    description: Server host address
+    required: true
+    default: "127.0.0.1"
+  
+  - name: PRIVATE_KEY
+    description: Wallet private key in base58 format
+    required: false
+    secret: true 
+  
+  - name: SOLANA_RPC_URL
+    description: Solana RPC URL for mainnet (leave empty for default)
+    required: false
+    secret: true
+  
+  - name: SOLANA_RPC_URL_DEVNET
+    description: Solana RPC URL for devnet (leave empty for default)
+    required: false
+    secret: true
+
+runtime: "container"
+
+build:
+  dockerfile: "Dockerfile"
+  dockerBuildPath: "."
+
+startCommand:
+  type: "http"
