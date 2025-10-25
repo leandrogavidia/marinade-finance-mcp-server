@@ -22,7 +22,10 @@
     "typescript": "5.9.3"
   },
   "dependencies": {
+    "@marinade.finance/marinade-ts-sdk": "5.0.17",
     "@modelcontextprotocol/sdk": "1.20.1",
+    "@solana/web3.js": "1.98.4",
+    "bs58": "6.0.0",
     "cors": "2.8.5",
     "dotenv": "17.2.3",
     "express": "5.1.0",

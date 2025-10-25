@@ -26,7 +26,7 @@ async function createMarinadeFinanceServer() {
         server.registerTool(
             t.name,
             {
-                title: t.name,
+                title: t.title,
                 description: t.description,
                 inputSchema: t.inputSchema
             },
@@ -41,7 +41,6 @@ async function createMarinadeFinanceServer() {
             }
         );
     }
-
 
     return server;
 }

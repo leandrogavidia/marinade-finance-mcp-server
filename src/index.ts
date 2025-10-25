@@ -10,7 +10,7 @@ const originalWrite = process.stdout.write;
 
 process.stdout.write = () => true;
 
-dotenv.config({ path: path.resolve(currentDir, "../.env") });
+dotenv.config({ path: path.resolve(currentDir, "../.env"), debug: true });
 
 process.stdout.write = originalWrite;
 
