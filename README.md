@@ -28,6 +28,8 @@ Register the server in your MCP-aware host configuration.
 }
 ```
 
+**Note:** Follow the Smithery's auth flow.
+
 ## Tools
 
 - ### Marinade Finance Docs 
@@ -83,6 +85,8 @@ In one terminal window, run the following command: `pnpx @modelcontextprotocol/i
 ## Build and run
 
 Run the command: `pnpm run build` and then: `pnpm run start`
+
+**Note:** Run in http mode
 
 ## Deployment
 
