@@ -7,6 +7,7 @@
 <p></p>
 
 <h1>Marinade Finance MCP Server</h1>
+[![smithery badge](https://smithery.ai/badge/@leandrogavidia/marinade-finance-mcp-server)](https://smithery.ai/server/@leandrogavidia/marinade-finance-mcp-server)
 
 <p>Marinade Finance MCP Server is an MCP server specifically designed for interacting with Marinade Finance on the Solana network. It provides advanced functionalities such as querying the official Marinade Finance documentation, retrieving protocol state information, managing liquid staking operations (stake/unstake), checking mSOL balances, and sending mSOL tokens between wallets.</p>
 
